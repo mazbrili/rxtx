@@ -30,7 +30,6 @@ import java.lang.Math;
 
 final class Raw  extends  RawPort {
 
-	static String Version=$Id$;
 	static 
 	{
 		System.loadLibrary( "Raw" );
@@ -432,5 +431,10 @@ final class Raw  extends  RawPort {
 		public void run() {
 			eventLoop();
 		}
+	}
+	public String getVersion()
+	{
+		String Version="$Id$";
+		return(Version);
 	}
 }
